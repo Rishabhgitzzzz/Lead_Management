@@ -23,7 +23,7 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-950">
       <div className="bg-white dark:bg-gray-900 rounded-2xl shadow p-8 w-full max-w-sm">
         <h1 className="text-2xl font-bold text-center mb-6 dark:text-white">
-          Smart Leads
+          Let's get back to work
         </h1>
 
         <div className="flex flex-col gap-4">
