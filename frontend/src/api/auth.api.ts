@@ -15,13 +15,13 @@ export async function loginApi(email: string, password: string) {
 }
 
 export async function registerApi(
-  name: string,
+  username: string,
   email: string,
   password: string,
   role = "sales",
 ) {
   const res = await api.post<{ success: boolean; data: User }>("/auth/signup", {
-    name,
+    username,
     email,
     password,
     role,

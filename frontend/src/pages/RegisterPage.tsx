@@ -6,7 +6,7 @@ import Select from "../ui/Select";
 import Button from "../ui/Button";
 
 export default function RegisterPage() {
-  const [name, setName] = useState("");
+  const [username, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [role, setRole] = useState("sales");
@@ -15,9 +15,9 @@ export default function RegisterPage() {
   const navigate = useNavigate();
 
   async function handleRegister() {
-    if (!name || !email || !password) return;
+    if (!username || !email || !password) return;
     try {
-      await register(name, email, password, role);
+      await register(username, email, password, role);
       navigate("/login");
     } catch {}
   }
@@ -32,7 +32,7 @@ export default function RegisterPage() {
         <div className="flex flex-col gap-4">
           <Input
             label="Name"
-            value={name}
+            value={username}
             onChange={setName}
             placeholder="Your full name"
           />
